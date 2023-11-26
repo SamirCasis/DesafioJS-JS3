@@ -1,4 +1,6 @@
-/* function pintar(){
+/* Inicio Punto 2, Desafio 3 JS
+
+function pintar(){
     ele.style.backgroundColor = 'yellow'
     }
     const ele = document.getElementById("ele1")
@@ -21,4 +23,18 @@ cambiaColor =
         return
     })
 
+//Inicio Punto 3, Desafio 3 JS
+
+
+/* const divRed = document.querySelector('#d2')
+const divGreen = document.querySelector('#d3')
+const divYellow = document.querySelector('#d4')
+const divKey = document.querySelector('#dvkey') */
+const divBlue = document.querySelector('#d1')
+const cambiarColor = (e) => { e.target.style.backgroundColor = 'black' }
+divBlue.addEventListener('click', cambiarColor)
+/* divRed.addEventListener('click', cambiarColor)
+divGreen.addEventListener('click', cambiarColor)
+divYellow.addEventListener('click', cambiarColor)
+ */
 
