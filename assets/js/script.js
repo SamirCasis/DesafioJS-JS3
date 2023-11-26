@@ -1,40 +1,45 @@
-/* Inicio Punto 2, Desafio 3 JS
-
-function pintar(){
-    ele.style.backgroundColor = 'yellow'
-    }
-    const ele = document.getElementById("ele1")
-ele.addEventListener("click", pintar); */
-
-
-const ele1 = document.getElementById('ele1');
-const pintar = (ele1, color = 'green')
-
-ele1.addEventListener = ('click', (pintar) => {
-    ele1.style.color = 'yellow'
-    return
-})
-
-cambiaColor =
-
-    cambiaColor1 = ('click', () => {
-        const d1 = document.getElementById('d1')
-        d1.style.backgroundColor = 'black'
-        return
-    })
-
 //Inicio Punto 3, Desafio 3 JS
 
+const divBlue = document.querySelector('#d1');
+const divRed = document.querySelector('#d2');
+const divGreen = document.querySelector('#d3');
+const divYellow = document.querySelector('#d4');
+const key = document.querySelector('#key');
 
-/* const divRed = document.querySelector('#d2')
-const divGreen = document.querySelector('#d3')
-const divYellow = document.querySelector('#d4')
-const divKey = document.querySelector('#dvkey') */
-const divBlue = document.querySelector('#d1')
-const cambiarColor = (e) => { e.target.style.backgroundColor = 'black' }
-divBlue.addEventListener('click', cambiarColor)
-/* divRed.addEventListener('click', cambiarColor)
-divGreen.addEventListener('click', cambiarColor)
-divYellow.addEventListener('click', cambiarColor)
- */
+const changeColor = (e) => (e.target.style.backgroundColor = 'black');
 
+divBlue.addEventListener('click', changeColor);
+divRed.addEventListener('click', changeColor);
+divGreen.addEventListener('click', changeColor);
+divYellow.addEventListener('click', changeColor);
+
+function createNuevoDiv(color) {
+    const nuevoDiv = document.createElement('Div');
+    nuevoDiv.style.width = '200px';
+    nuevoDiv.style.height = '200px';
+    nuevoDiv.style.backgroundColor = color;
+    nuevoDiv.style.marginBottom = '20px';
+    document.body.appendChild(nuevoDiv);
+};
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'a') {
+        key.style.backgroundColor = 'pink';
+    } else if (e.key === 's') {
+        key.style.backgroundColor = 'orange';
+    } else if (e.key === 'd') {
+        key.style.backgroundColor = 'skyblue';
+    }
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'q') {
+        createNuevoDiv('purple');
+    } else if (e.key === 'w') {
+        createNuevoDiv('gray');
+    } else if (e.key === 'e') {
+        createNuevoDiv('brown');
+    }
+});
+
+//Inicio Punto 2, Desafio 3 JS

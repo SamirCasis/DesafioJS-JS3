@@ -25,3 +25,10 @@
     background-color: yellow;
     margin-bottom: 20px;
 }
+
+#key {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    border: solid black 1px;
+}

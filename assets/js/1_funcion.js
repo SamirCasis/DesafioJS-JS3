@@ -1,9 +1,9 @@
-/* ejemplo F declarada
+/* ejemplo Funcion declarada
 function example(a, b, c){
 return a+b+c
 }
  */
 
-// F expresada
+// Funcion expresada
 
-example = function (suma) { a + b + c };
+example = function (a, b, c) { return a + b + c };
