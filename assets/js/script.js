@@ -43,3 +43,15 @@ document.addEventListener('keydown', function (e) {
 });
 
 //Inicio Punto 2, Desafio 3 JS
+
+const ele = document.querySelector('#ele1')
+
+const pintar = (color) => {
+    ele.style.backgroundColor = color;
+}
+
+pintar('green')
+
+ele.addEventListener('click', () => {
+    pintar('yellow')
+})
